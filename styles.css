@@ -462,7 +462,7 @@ background-attachment: fixed; */
 
 
 .education{
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 
     height:240vh;
     width:100%;
@@ -532,6 +532,7 @@ background-attachment: fixed; */
 }
 .education .education-box{
   height:80%;
+  
   width:60%;
   color:white;
   /* background-color: pink; */
@@ -672,23 +673,47 @@ background-attachment: fixed; */
 
 
 
-.last-heading {
-   background-image:linear-gradient(to right, #17D396, #07F7F6);
+.last-heading span{
   color:rgba(0, 0, 0, 0);
   -webkit-background-clip:text;
   background-clip:text; position:relative;
   font-size: 3.3rem;
   font-weight: bold;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -60px linear-gradient(transparent, rgba(0,0,0,.2));
+  /* font-size: 60px; */
+}
+.waviy span {
+  background-image:linear-gradient(to right, #02fb7a, #07cbf7);
+
+  /* font-family: 'Alfa Slab One', cursive; */
+  position: relative;
+  display: inline-block;
+  /* color: #fff; */
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
 }
 
 .my-projects{
   background-image: radial-gradient(circle, #050013, #050011, #040011, #040010, #03000d, #03000a, #030008, #030005, #030003, #030002, #020001, #000000);
 overflow: hidden;
 position: relative;
-  /* background-color: rgb(1, 0, 7); */
-  height: 240vh;
+  height: 230vh;
   width:100%;
   display: flex;
   flex-direction:column;
@@ -698,12 +723,6 @@ position: relative;
   padding-bottom: 10rem;
 }
 
-/* .new-background{
-  max-height: 100%;
-  width: 100%;
-  
-  
-} */
 
 .project-heading{
   background-image:linear-gradient(to right, #17d378, #07F7F6);
@@ -712,7 +731,7 @@ position: relative;
   background-clip:text; position:relative;
   font-size: 3.3rem;
   font-weight: bold;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 
 }
