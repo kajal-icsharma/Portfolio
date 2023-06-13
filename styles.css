@@ -93,6 +93,7 @@ Navbar
   }
 
 
+
 .background {
     position: absolute;
   display: block;
@@ -188,14 +189,6 @@ position: relative;
     }
   }
 
-
-
-
-
-
-
-
-
   .text-container > span {
     text-transform: uppercase;
     animation: glow 2s ease-in-out infinite;
@@ -289,18 +282,6 @@ position: relative;
   }
 
 
-/* background-image: radial-gradient(   circle,
-rgba(0, 0, 0, 0.5),
-rgba(0, 0, 0, 0.5),
-rgba(0, 0, 0, 0.5)
-),url('https://images.pexels.com/photos/23474/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-margin: 0;
-padding: 0;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed; */
-
 .my-details{
     border-top: 0.3rem solid rgb(4, 189, 189) ;
     height: 115vh;
@@ -365,12 +346,14 @@ background-attachment: fixed; */
 }
 
 .my-details .identity .details .heading{
-    text-shadow: 0 0 2px #ffffff, 0 0 8px #ffffff, 0 0 0 #ffffff;
-
+    background-image:linear-gradient(to right, #17D396, #07c3f7);
+    color:rgba(0, 0, 0, 0);
+    -webkit-background-clip:text;
+    background-clip:text; position:relative;
     font-size: 4rem;
-    color: rgb(4, 189, 189);
     margin-bottom: 1rem;
     display: flex;
+    font-weight: 600;
 }
 
 .my-details .identity .details .details1{
@@ -384,7 +367,10 @@ background-attachment: fixed; */
 
 .my-details .identity .details .names{
     font-size: 1.3rem;
-    color: rgb(4, 189, 189);
+    background-image:linear-gradient(to right, #17D396, #07c3f7);
+    color:rgba(0, 0, 0, 0);
+    -webkit-background-clip:text;
+    background-clip:text; position:relative;
     font-weight: bold;
 }
 
@@ -404,7 +390,6 @@ background-attachment: fixed; */
     align-items: center;
     justify-content:space-evenly;
     margin-bottom: 6rem;
-    /* color: rgb(4, 189, 189); */
 }
 
 
@@ -412,8 +397,16 @@ background-attachment: fixed; */
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: rgb(4, 189, 189);
+    background-image:linear-gradient(to right, #17D396, #07c3f7);
+    color:rgba(0, 0, 0, 0);
+    -webkit-background-clip:text;
+    background-clip:text; position:relative;
 
+
+}
+
+.my-details .interests .heading i{
+      color: rgb(4, 189, 189);
 
 }
 
@@ -655,7 +648,7 @@ background-attachment: fixed; */
 .proffessional-skills .skill-boxes{
   width: 80%;
   height: 22%;
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   flex-direction:row;
   align-items: center;
@@ -669,9 +662,21 @@ background-attachment: fixed; */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition:transform 1s ease;
+  -webkit-transition:transform 1s ease;
+  -moz-transition:transform 1s ease;
+  -ms-transition:transform 1s ease;
+  -o-transition:transform 1s ease;
 }
 
-
+.proffessional-skills .skill-boxes .inner-box:hover{
+  transform: translateY(-2rem);
+  -webkit-transform: translateY(-2rem);
+  -moz-transform: translateY(-2rem);
+  -ms-transform: translateY(-2rem);
+  -o-transform: translateY(-2rem);
+  cursor: pointer;
+}
 
 .last-heading span{
   color:rgba(0, 0, 0, 0);
@@ -739,7 +744,7 @@ position: relative;
 .my-projects .github{
   height:14%;
   width:22%;
-  background-image:linear-gradient(to right, #17d378, #07F7F6);
+  background-image:linear-gradient(to right, #17d378, #07bbf7);
   text-decoration: none;
   display: flex;
   flex-direction:column;
@@ -943,3 +948,5 @@ position: relative;
   background-image:linear-gradient(to right, #00d23f, #058cfb);
   cursor: pointer;
 }
+
+
