@@ -453,15 +453,100 @@ position: relative;
 
 }
 
+.resume{
+  height:30vh;
+  width:100%;
+  /* background-color: #030002; */
+  background-color: rgb(0, 0, 11);
+
+  color: white;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content:center;
+
+}
+
+.resume .block {
+  position: relative;
+  /*margin: 300px auto 0;
+  */width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:center;
+  z-index: 5;
+  background: linear-gradient(0deg, #000, #272727);
+  transition:transform 1s ease ;
+  -webkit-transition:transform 1s ease ;
+  -moz-transition:transform 1s ease ;
+  -ms-transition:transform 1s ease ;
+  -o-transition:transform 1s ease ;
+}
+.resume .block:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.resume .block .text{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:center;
+}
+
+.resume .block .text a{
+  text-decoration: none;
+  color:white;
+}
+
+
+.resume .block:before, .resume .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #00fbb0, #00ff99, #00e1ff,#00b7ff, #21adf9, #5791fd, 		#31a9ff, #00ffe5,#00ffaa, #00ffdd);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+  animation: steam 20s linear infinite;
+	-webkit-animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.resume .block:after {
+	filter: blur(30px);
+	-webkit-filter: blur(30px);
+}
+
+
+
 
 .education{
   padding-bottom: 2rem;
+  border-top: 0.3rem solid rgb(4, 189, 189) ;
 
     height:240vh;
     width:100%;
     background-color:rgb(35, 39, 46);
 
-    border-top: 0.3rem solid rgb(4, 189, 189) ;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -558,15 +643,20 @@ position: relative;
 }
 
 .education .education-box .inner-box .boxes{
-  /* border: 1px solid grey; */
-  height:20%;
+  /*border: 1px solid grey;
+  */height:20%;
   width:100%;
   display: flex;
   flex-direction:column;
-  /* align-items: center; */
-  justify-content:center;
-  /* background-color: rgb(176, 247, 196); */
+  /*align-items: center;
+  */justify-content:center;
+  /*background-color: rgb(176, 247, 196);
+  */
+ 
 }
+
+
+
 .education .education-box .inner-box .right{
   align-items: flex-start;
   padding-left: 5rem;
