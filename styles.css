@@ -241,14 +241,14 @@ position: relative;
     animation: 2s slide-left;
     -webkit-animation: 2s slide-left;
 }
-  @keyframes slide-left {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 0%;
-    }
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
   }
+  to {
+    margin-left: 0%;
+  }
+}
 
 
   /* ===== Scrollbar CSS ===== */
@@ -296,53 +296,51 @@ position: relative;
 }
 
 .my-details .identity{
-    height:80%;
-    width: 80%;
-    /* background-color: green; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
+  height:80%;
+  width: 80%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
 }
 
 .my-details .identity .image{
-    width:50%;
-    height: 100%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
+  width:50%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
 }
 
 .my-details .identity .image .image-box{
-    height:60%;
-    width:50%;
-    border: 0.4rem solid rgb(4, 189, 189);
+  height:60%;
+  width:50%;
+  border: 0.4rem solid rgb(4, 189, 189);
    
 }
 
 .my-details .identity .image .image-box img{
-    width:100%;
-    height: 100%;
-    transform: translateX(-3rem) translateY(3rem);
-    -webkit-transform: translateX(-3rem) translateY(3rem);
-    -moz-transform: translateX(-3rem) translateY(3rem);
-    -ms-transform: translateX(-3rem) translateY(3rem);
-    -o-transform: translateX(-3rem) translateY(3rem);
+  width:100%;
+  height: 100%;
+  transform: translateX(-3rem) translateY(3rem);
+  -webkit-transform: translateX(-3rem) translateY(3rem);
+  -moz-transform: translateX(-3rem) translateY(3rem);
+  -ms-transform: translateX(-3rem) translateY(3rem);
+  -o-transform: translateX(-3rem) translateY(3rem);
 }
 
 
 .my-details .identity .details{
-    box-sizing: border-box;
-    width:50%;
-    height: 100%;
-    display: flex;
-    flex-direction:column;
-    align-items: flex-start;
-    justify-content:space-evenly;
-    padding: 3rem;
-
-
+  box-sizing: border-box;
+  width:50%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-content:space-evenly;
+  padding: 3rem;
 }
 
 .my-details .identity .details .heading{
@@ -394,15 +392,13 @@ position: relative;
 
 
 .my-details .interests .heading{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    background-image:linear-gradient(to right, #17D396, #07c3f7);
-    color:rgba(0, 0, 0, 0);
-    -webkit-background-clip:text;
-    background-clip:text; position:relative;
-
-
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background-image:linear-gradient(to right, #17D396, #07c3f7);
+  color:rgba(0, 0, 0, 0);
+  -webkit-background-clip:text;
+  background-clip:text; position:relative;
 }
 
 .my-details .interests .heading i{
@@ -434,9 +430,7 @@ position: relative;
 .my-details .interests .main-box{
     height: 100%;
     width:20%;
-    /* background-color: red; */
     display: flex;
-    
     flex-direction:column;
     align-items: center;
     justify-content:space-evenly;
@@ -462,7 +456,7 @@ position: relative;
   color: white;
   display: flex;
   flex-direction:row;
-  align-items: flex-start;
+  align-items: flex-startw;
   justify-content:center;
 
 }
@@ -542,35 +536,31 @@ position: relative;
 .education{
   padding-bottom: 2rem;
   border-top: 0.3rem solid rgb(4, 189, 189) ;
+  height:240vh;
+  width:100%;
+  background-color:rgb(35, 39, 46);
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif; 
+}
 
-    height:240vh;
-    width:100%;
-    background-color:rgb(35, 39, 46);
-
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif; 
-  }
-  
   .education .heading{
-    
     font-size: 4rem;
-    
     font-weight: bold;
     justify-content:center;
     display: flex;
     flex-direction:column;
     align-items: center;
-    
+
   }
-  
-  .education .main-heading{
-    background-image:linear-gradient(to right, #17D396, #07F7F6);
-    color:rgba(0, 0, 0, 0);
-    -webkit-background-clip:text;
-    background-clip:text; position:relative;
+
+.education .main-heading{
+  background-image:linear-gradient(to right, #17D396, #07F7F6);
+  color:rgba(0, 0, 0, 0);
+  -webkit-background-clip:text;
+  background-clip:text; position:relative;
   margin-top: 6rem;
   margin-bottom: 2rem;
   display: flex;
