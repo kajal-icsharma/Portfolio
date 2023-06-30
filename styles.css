@@ -443,6 +443,7 @@ position: relative;
 .my-details .interests .circle:hover{
     background-color: white;
     cursor:pointer;
+    /* box-shadow: 0 0 50px 0px white; */
 
 
 }
@@ -534,9 +535,9 @@ position: relative;
 
 
 .education{
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   border-top: 0.3rem solid rgb(4, 189, 189) ;
-  height:240vh;
+  height:260vh;
   width:100%;
   background-color:rgb(35, 39, 46);
   display: flex;
@@ -562,7 +563,7 @@ position: relative;
   -webkit-background-clip:text;
   background-clip:text; position:relative;
   margin-top: 6rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   display: flex;
   flex-direction:row;
   align-items: center;
@@ -634,7 +635,7 @@ position: relative;
 
 .education .education-box .inner-box .boxes{
   /*border: 1px solid grey;
-  */height:20%;
+  */height:14.285%;
   width:100%;
   display: flex;
   flex-direction:column;
@@ -712,23 +713,26 @@ position: relative;
 }
 
 .proffessional-skills{
-  background-color:rgb(242,242,242);
-  height: 100vh;
+  background-color: rgb(10, 14, 21);
+  height: 120vh;
   width: 100%;
   display: flex;
   flex-direction:column;
   align-items: center;
   justify-content:space-evenly;
+  padding-bottom: 2rem;
 }
 
 .proffessional-skills .heading{
   font-size: 3rem;
+  color: rgb(204, 204, 204);
+  margin-top: 2rem;
+
 }
 
 .proffessional-skills .skill-boxes{
   width: 80%;
   height: 22%;
-  /* background-color: pink; */
   display: flex;
   flex-direction:row;
   align-items: center;
@@ -737,8 +741,8 @@ position: relative;
 
 .proffessional-skills .skill-boxes .inner-box{
   width: 20%;
-  height:100%;
-  background-color: rgb(242,242,242);
+  height:130%;
+  background-color: rgb(10, 14, 21);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -747,6 +751,16 @@ position: relative;
   -moz-transition:transform 1s ease;
   -ms-transition:transform 1s ease;
   -o-transition:transform 1s ease;
+  color: rgb(175, 173, 173);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-size: 70%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:flex-end;
+
 }
 
 .proffessional-skills .skill-boxes .inner-box:hover{
@@ -971,8 +985,8 @@ position: relative;
 
 
 .contact{
-  height: 80vh;
-  background-color: #ffffff;
+  height: 100vh;
+  background-color: #08080a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -986,16 +1000,19 @@ position: relative;
   -webkit-background-clip:text;
   background-clip:text; position:relative;
   font-size: 7rem;
+
 }
 
 .contact .sub-heading{
   font-size: 3rem;
   font-family: 'Unna', serif;
   font-weight: 600;
-  background-image:linear-gradient(to right, #000000, #484848);
+  background-image:linear-gradient(to right, #ffffff, #000000);
   color:rgba(0, 0, 0, 0);
   -webkit-background-clip:text;
   background-clip:text; position:relative;
+  margin-bottom: 2rem;
+
 }
 
 .contact .accounts{
@@ -1004,14 +1021,18 @@ position: relative;
   align-items: center;
   justify-content: space-between;
   /* background-color: pink; */
-  width: 25%;
+  width: 35%;
   height: 10%;
-  border-top: 2px solid grey;
+  padding: 1rem;
+
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, rgba(6, 185, 98, 0.132) 5%, rgba(6, 185, 98, 0.866) 20%, rgba(4, 190, 190, 0.734) 80%, rgba(4, 190, 190, 0.192) 95%);
+  border-image-slice: 1;  
 }
 
 .contact .accounts .contact-icon{
   height: 100%;
-  width:17%;
+  width:15.5%;
   /* background-color: palevioletred; */
   display: flex;
   flex-direction: row;
@@ -1029,4 +1050,179 @@ position: relative;
   cursor: pointer;
 }
 
+.login-box {
 
+  width: 80%;
+  padding: 40px;
+  text-align: center;
+}
+
+.login-box .details-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  
+}
+
+.login-box .user-box .input-area {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #aba5a5;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #aba5a5;
+  outline: none;
+  background: transparent;
+  transition: .5s;
+
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #aba5a5;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box .input-area:focus ~ label,
+.login-box .user-box .input-area:valid ~ label {
+  top: -20px;
+  left: 0;
+  background-image:linear-gradient(to right, #06b963, #04bebe);
+  color:rgba(0, 0, 0, 0);
+  -webkit-background-clip:text;
+  font-size: 12px;
+  
+  
+}
+
+.login-box .user-box .input-area:focus{
+  border-bottom: 1px solid transparent;
+  border-image:linear-gradient(to right, #06b963, #04bebe);
+  border-image-slice: 1;
+}
+
+.login-box form .submit {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background-image:linear-gradient(to right, #06b963, #04bebe);
+  color:rgba(0, 0, 0, 0);
+  -webkit-background-clip:text;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box .submit:hover {
+  /* background: hsl(183, 98%, 48%); */
+  background-image:linear-gradient(to right, #06b963, #04bebe);
+  -webkit-background-clip: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 0 5px #06b963,
+              0 0 25px #04bebe,
+              0 0 50px #06b963,
+              0 0 100px #04bebe;
+}
+
+.login-box .submit span {
+  position: absolute;
+  display: block;
+}
+
+.login-box .submit span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #06b963);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box .submit span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #04bebe);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box .submit span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #06b963);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box .submit span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #04bebe);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
