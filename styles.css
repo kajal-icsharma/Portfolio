@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unna:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 html,body{
     padding:0;
     margin:0;
@@ -356,7 +357,12 @@ position: relative;
 
 .my-details .identity .details .details1{
     font-size: 1.1rem;
-    color:rgb(238, 238, 238);
+    background-image:linear-gradient(to right, #ffffff, #f0f0f0);
+    color:rgba(0, 0, 0, 0);
+    -webkit-background-clip:text;
+    background-clip:text;
+    position:relative;
+    /* color:rgb(238, 238, 238); */
     display: flex;
 }
 .my-details .identity .details .list{
@@ -373,7 +379,12 @@ position: relative;
 }
 
 .my-details .identity .details .value{
-    color:white;
+  background-image:linear-gradient(to right, #ffffff, #e5e5e5);
+  color:rgba(0, 0, 0, 0);
+  -webkit-background-clip:text;
+  background-clip:text;
+  position:relative;
+    /* color:white; */
     font-size: 1.2rem;
     margin-left: 1rem;
 
@@ -727,7 +738,21 @@ position: relative;
   font-size: 3rem;
   color: rgb(204, 204, 204);
   margin-top: 2rem;
+  transition:transform 1s ease;
+  -webkit-transition:transform 1s ease;
+  -moz-transition:transform 1s ease;
+  -ms-transition:transform 1s ease;
+  -o-transition:transform 1s ease;
 
+}
+
+.proffessional-skills .heading:hover{
+  transform: translateX(-8rem);
+  -webkit-transform: translateX(-8rem);
+  -moz-transform: translateX(-8rem);
+  -ms-transform: translateX(-8rem);
+  -o-transform: translateX(-8rem);
+  cursor: pointer;
 }
 
 .proffessional-skills .skill-boxes{
@@ -819,6 +844,7 @@ position: relative;
   align-items: center;
   justify-content:space-evenly;
   font-family: 'Open Sans', sans-serif; 
+  
   padding-bottom: 10rem;
 }
 
@@ -827,12 +853,25 @@ position: relative;
   background-image:linear-gradient(to right, #17d378, #07F7F6);
   color:rgba(0, 0, 0, 0);
   -webkit-background-clip:text;
-  background-clip:text; position:relative;
+  background-clip:text;
+  position:relative;
   font-size: 3.3rem;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  transition:transform 2s ease;
+  -webkit-transition:transform 2s ease;
+  -moz-transition:transform 2s ease;
+  -ms-transition:transform 2s ease;
+  -o-transition:transform 2s ease;
+}
 
+.project-heading:hover{
+  transform: rotate3d(0, 10, 10, 360deg);
+  -webkit-transform: rotate3d(0, 10, 10, 360deg);
+  -moz-transform: rotate3d(0, 10, 10, 360deg);
+  -ms-transform: rotate3d(0, 10, 10, 360deg);
+  -o-transform: rotate3d(0, 10, 10, 360deg);
 }
 
 .my-projects .github{
@@ -933,11 +972,44 @@ position: relative;
 .project .brief{
   height: 100%;
   width:70%;
-  /* background-color: rgb(0, 2, 128); */
-  display: flex;
+  /*background-color: rgb(0, 2, 128);
+  */display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+.project .right{
+  transition:transform 2s ease;
+  -webkit-transition:transform 2s ease;
+  -moz-transition:transform 2s ease;
+  -ms-transition:transform 2s ease;
+  -o-transition:transform 2s ease;
+}
+
+
+.project .right:hover{
+  transform:translateX(3rem);
+  -webkit-transform:translateX(3rem);
+  -moz-transform:translateX(3rem);
+  -ms-transform:translateX(3rem);
+  -o-transform:translateX(3rem);
+}
+
+.project .left{
+  transition:transform 2s ease;
+  -webkit-transition:transform 2s ease;
+  -moz-transition:transform 2s ease;
+  -ms-transition:transform 2s ease;
+  -o-transition:transform 2s ease;
+}
+
+.project .left:hover{
+  transform:translateX(-3rem);
+  -webkit-transform:translateX(-3rem);
+  -moz-transform:translateX(-3rem);
+  -ms-transform:translateX(-3rem);
+  -o-transform:translateX(-3rem);
 }
 
 .project .image-box .visit{
